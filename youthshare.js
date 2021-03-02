@@ -4,9 +4,9 @@ let md5 = require('md5-node');
 let nowTime;
 let wxck;
 let articles = ["https://focus.youth.cn/article/s?signature=QB5EzPY3exK9wOd7E9g65lsJVrZMfgGGEZO78oADjvkbgZRGLV&uid=53584250&phone_code=1a8058c3f92ece1837b244cc51494288&scid=36527824&time=1614613706&app_version=2.0.0&sign=f5703f2e0c558720ab731b7864a8f660",
-		"https://focus.youth.cn/article/s?signature=nME6PzmgxDLdbpG4wVp0MKHkXoV3IRYYz9o1rjJNqwAQ0OoW9B&uid=53806062&phone_code=b8f87c201a084dd47540e430f7039bdc&scid=36527824&time=1614613112&app_version=2.0.2&sign=5ee09f207d42c271f6ac6a678e488ae3",
-		"https://focus.youth.cn/article/s?signature=lbgJRpz0We53NxQ4Qqg5QBsP3OQQhx00qly4koMEv6nydKPZLD&uid=52978730&phone_code=b8f87c201a084dd47540e430f7039bdc&scid=36523409&time=1614612826&app_version=2.0.2&sign=a7c1c8a23c8c0e4a1f68679e57e0cbc4",
-		"https://focus.youth.cn/article/s?signature=MGDKgpQNLZkJvEd4q8yjDPu8BPQyTNvJAw81rny295VAlmPWzY&uid=54007232&phone_code=b8f87c201a084dd47540e430f7039bdc&scid=36508911&time=1614528006&app_version=2.0.2&sign=421714752539e6d7047bc375ccbd16b8",
+"https://focus.youth.cn/article/s?signature=nME6PzmgxDLdbpG4wVp0MKHkXoV3IRYYz9o1rjJNqwAQ0OoW9B&uid=53806062&phone_code=b8f87c201a084dd47540e430f7039bdc&scid=36527824&time=1614613112&app_version=2.0.2&sign=5ee09f207d42c271f6ac6a678e488ae3",
+"https://focus.youth.cn/article/s?signature=lbgJRpz0We53NxQ4Qqg5QBsP3OQQhx00qly4koMEv6nydKPZLD&uid=52978730&phone_code=b8f87c201a084dd47540e430f7039bdc&scid=36523409&time=1614612826&app_version=2.0.2&sign=a7c1c8a23c8c0e4a1f68679e57e0cbc4",
+"https://focus.youth.cn/article/s?signature=MGDKgpQNLZkJvEd4q8yjDPu8BPQyTNvJAw81rny295VAlmPWzY&uid=54007232&phone_code=b8f87c201a084dd47540e430f7039bdc&scid=36508911&time=1614528006&app_version=2.0.2&sign=421714752539e6d7047bc375ccbd16b8",
 "https://focus.youth.cn/article/s?signature=yloGK5wNVmQq0XWaWwgVlwcAmGlNFXnGKp5an93eRAO8BMxdvD&uid=52492099&phone_code=b978812ed4eca2788de4cdbd9dcf1d6a&scid=36473325&time=1614501140&app_version=2.0.0&sign=91016cb068158f3afc001f5c92c19fa4",
 "https://focus.youth.cn/article/s?signature=j6LwoklONRyQvgd4kx3GENuqA925ijQKzNJ78M9zV2YP3KBGAe&uid=52806391&phone_code=b99bf7c37d52dedeec7f5838f61c5c90&scid=36019501&time=1614500968&app_version=2.0.2&sign=c16e31ae0a114f8d0f7a67029d5546e4",
 "https://focu.youth.cn/zerohot/20210228?sid=36512583&uid=54035500&timestamp=1614498909&signature=B3MvlKp05kgOXPA9oG7nRQXr3ujojBV7erYEjxzQLWmw8DnyJb&share_id=54035500365125831614498927138&scene_id=fire_share&time=1614498927&phone_code=6e7a954297b889a95a7f47d28f9be26c&app_version=2.0.2.1&sign=d82dffb62e1819ee1949b64b994f0884",
